@@ -10,7 +10,7 @@ def read_data(path):
     '''
     Read train/test data from corresponding CSV files
     parameter:
-        path: floder path of dataset
+        path: floder path of data
     return:
         train: train data in DataFrame (pandas format)
         test:  test data in DataFrame (pandas format)
@@ -21,7 +21,7 @@ def read_data(path):
     train = pd.read_csv(path + 'train.csv')
     test = pd.read_csv(path + 'test.csv')
 
-    print('Read dataset successfully!')
+    print('Read data successfully!')
 
     # print ('***********Train*************')
     # print ('test')
@@ -42,6 +42,6 @@ def count_data(train, test):
 
 if __name__=='__main__':
     # Here is an example to use function read_data()
-    path = 'dataset/titanic/'
+    path = 'data/titanic/'
     data_trian, data_test = read_data(path)
     count_data(data_trian, data_test)
